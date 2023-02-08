@@ -4,14 +4,309 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class = "bg-primary">
-    <button class="btn-light btn">전송</button>
-    <button class="btn-outline-light btn">전송</button>
-    <button class="btn-warning btn">전송</button>
-    <button class="btn-outline-warning btn">전송</button>
-    <img src="node_modules/bootstrap-icons/icons/cup-hot.svg" alt="">
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="#">Navbar</a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarBasic">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-light" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline ml-3">
+              <div class="input-group">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <div class="input-group-append">
+                    <button class="btn bg-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- slide -->
+    <section>
+        <div class="container-fluid ps-0" style="overflow:hidden">
+        </div>
+        <div id="carouselWithIndicators" class="carousel slide carousel-dark bg-in" data-bs-ride="carousel" style="height:100vh; width:100wh;">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://placekitten.com/1000/500" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-none d-md-block bottom-50">
+                    <h5>Title</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non distinctio commodi facere quibusdam repellendus, soluta aspernatur sit ipsa eveniet voluptatibus obcaecati consequatur explicabo labore amet voluptas quam vitae autem!</p>
+                    <a href="#" class="btn btn-warning btn-lg px-4 m-3">와</a>
+                    <a href="#" class="btn btn-warning btn-lg px-4 m-3">우</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://placekitten.com/1000/501" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-none d-md-block bottom-50 position-absolute top-50 start-0">
+                    <h5 class="text-light">외쳐요</h5>
+                    <p class ="text-light">고양이고양이고양이고양이고양이고양이고양이고양이고양이!!</p>
+                    <a href="#" class="btn btn-outline-primary btn-lg px-4 m-3">와</a>
+                    <a href="#" class="btn btn-outline-warning btn-lg px-4 m-3">우</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="http://placekitten.com/1000/502" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-none d-md-block bottom-50">
+                    <h5 class="text-white">고!!양이!!</h5>
+                    <p class="text-white">catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat!</p>
+                    <a href="#" class="btn btn-warning btn-lg px-4 m-3">와</a>
+                    <a href="#" class="btn btn-outline-warning btn-lg px-4 m-3">우</a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+    </section>
+    <section class="bg-light p-5">
+        <div class="container-fluid">
+            <!-- title -->
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-danger display-2">skills</h1>
+                    <p class="lead text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique debitis, s</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                    <i class="bi bi-compass fw-bold display-1 text-danger"></i>
+                    <h1 class="text-secondary fw-bold">develop</h1>
+                    <p class="text-secondary lead">유후후후</p>
+                    <a href="#" class="btn btn-outline-danger">hi</a>
+                </div>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                    <i class="bi bi-chat-text fw-bold display-1 text-danger"></i>
+                    <h1 class="text-secondary fw-bold">Chat</h1>
+                    <p class="text-secondary lead">유후후후</p>
+                    <a href="#" class="btn btn-outline-danger">hello</a>
+                </div>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                    <i class="bi bi-android2 fw-bold display-1 text-danger"></i>
+                    <h1 class="text-secondary fw-bold">Android</h1>
+                    <p class="text-secondary lead">유후후후</p>
+                    <a href="#" class="btn btn-outline-danger">good</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project -->
+    <section class="p-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-danger display-2">Projects</h1>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus, animi qui sunt </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <img src="http://placekitten.com/300/300" alt=""class="img-thumbnail">
+                    <h2 class="my-3 text-danger">project1</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis architecto cupiditate consect</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-3">
+                    <img src="http://placekitten.com/300/300" alt=""class="img-thumbnail">
+                    <h2 class="my-3 text-danger">project2</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis architecto cupiditate consect</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4">
+                    <img src="http://placekitten.com/300/300" alt=""class="img-thumbnail">
+                    <h2 class="my-3 text-danger">project3</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis architecto cupiditate consect</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-5">
+                    <img src="http://placekitten.com/300/300" alt=""class="img-thumbnail">
+                    <h2 class="my-3 text-danger">project4</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis architecto cupiditate consect</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <!-- teams -->
+    <section class="p-2 p-sm-5 bg-secondary">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-danger display-2">Teams</h1>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus, animi qui sunt </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-10 mx-auto mb-4 text-center mb-3">
+                    <div class="card">
+                        <img src="http://placekitten.com/300/200" alt="">
+                        <div class="card-body"></div>
+                        <div class="card-title">
+                            <h3 class="text-muted">고등어</h3>
+                        </div>
+                        <div class="card-subject">
+                            <p class="lead text-secondary">Lorem aborum vitae earum minus accusamus sit sapiente repellat omnis?</p>
+                        </div>
+                        <div class="text-end">
+                            <a href="#"><i class="fs-2 mx-2 text-primary bi bi-reddit"></i></a>
+                            <a href="#"><i class="fs-2 mx-2 text-warning bi bi-snapchat"></i></a>
+                            <a href="#"><i class="fs-2 mx-2 text-info bi bi-twitch"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-4 text-center mb-3">
+                    <div class="card">
+                        <img src="http://placekitten.com/300/200" alt="">
+                        <div class="card-body"></div>
+                        <div class="card-title">
+                            <h3 class="text-muted">고등어</h3>
+                        </div>
+                        <div class="card-subject">
+                            <p class="lead text-secondary">Lorem aborum vitae earum minus accusamus sit sapiente repellat omnis?</p>
+                        </div>
+                        <div class="text-end">
+                            <a href="#"><i class="fs-2 mx-2 text-primary bi bi-reddit"></i></a>
+                            <a href="#"><i class="fs-2 mx-2 text-warning bi bi-snapchat"></i></a>
+                            <a href="#"><i class="fs-2 mx-2 text-info bi bi-twitch"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-4 text-center mb-3">
+                    <div class="card">
+                        <img src="http://placekitten.com/300/200" alt="">
+                        <div class="card-body"></div>
+                        <div class="card-title">
+                            <h3 class="text-muted">고등어</h3>
+                        </div>
+                        <div class="card-subject">
+                            <p class="lead text-secondary">Lorem aborum vitae earum minus accusamus sit sapiente repellat omnis?</p>
+                        </div>
+                        <div class="text-end">
+                            <a href="#"><i class="fs-2 mx-2 text-primary bi bi-reddit"></i></a>
+                            <a href="#"><i class="fs-2 mx-2 text-warning bi bi-snapchat"></i></a>
+                            <a href="#"><i class="fs-2 mx-2 text-info bi bi-twitch"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--progress  -->
+    <section class="p-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-danger display-2">progress</h1>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus, animi qui sunt </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-10 text-secondary">
+                    <h2>HTML</h2>
+                    <div class="progress  mb-3">
+                        <div class="progress-bar bg-secondary" style="width: 50%;">50%</div>
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="progress  mb-3">
+                        <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+                    </div>
+                    <h2>Javascript</h2>
+                    <div class="progress  mb-3">
+                        <div class="progress-bar bg-danger" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="p-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mb-3">
+                    <h1 class="text-danger display-2">contact</h1>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius delectus, animi qui sunt </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-10 col-md-8">
+                    <div class="text-center text-secondary">
+                        <h2>질문있는사람</h2>
+                        <p>여기클릭!!</p>
+                    </div>
+                    <form class="text-muted">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingname" placeholder="이름">
+                            <label for="floatingname">이름</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingmail" placeholder="메일">
+                            <label for="floatingmail">메일</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea id="floatingText" class="form-control" placeholder="메시지작성" style="height:200px"></textarea>
+                            <label for="floatingText">메시지 작성</label>
+                        </div>
+                        <button class="btn btn-outline-danger btn-block col-12">
+                            전송
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-white font-weight-light text-capitalize p-3">pure bootstrap project</h1>
+                    <h3 class="text-light font-weight-light text-italic mb-3">the end</h3>
+                    <div class ="row text-center">
+                        <div class="col-3 py-2"><a href="#"><i class="bi bi-rainbow"></i></a></div>
+                        <div class="col-3 py-2"><a href="#"><i class="bi bi-robot"></i></a></div>
+                        <div class="col-3 py-2"><a href="#"><i class="bi bi-sina-weibo"></i></a></div>
+                        <div class="col-3 py-2"><a href="#"><i class="bi bi-lightning-fill"></i></a></div>
+                    </div>
+                    <p class="text-light py-4 m-0">&copy:Copyright 20230208-made by nh </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="node_modules/@popperjs/core/lib/popper.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
